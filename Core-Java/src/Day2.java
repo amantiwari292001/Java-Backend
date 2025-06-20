@@ -18,6 +18,8 @@ public class Day2 {
             j++; //Increment/Decrement
         } while(j <= 15); //Condition
 
+        //Use while when you don't know the break point, else use for.
+
         //Object-Oriented Programming
         //Object: Properties(Identity) and Behaviour(Work)
 
