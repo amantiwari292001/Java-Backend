@@ -66,7 +66,6 @@ public class Day3 {
         System.out.println("StringBuffer: " + sb);
         System.out.println(new StringBuffer(str2).append(" Nothing"));//we can convert it to string using toString();
         //StringBbuilder is thread safe but StringBuffer is not.
-
     }
 }
 
