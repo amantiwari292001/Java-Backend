@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Day3 {
     public static void main(String[] args) {
-        //Array: Way to store same type of data together. It allows us to store a defined number of elemen ts.
+        //Array: Way to store same type of data together. It allows us to store a defined number of elements.
         //Data-type[] name = new data-type[size];
         int[] arr = new int[2]; //Java is 0 indexing language.
         int[] arr2 = {1,2,3,4,5,6};
