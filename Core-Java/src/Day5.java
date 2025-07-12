@@ -1,7 +1,7 @@
 public class Day5 {
     public static void main(String[] args) { //Access Modifier, keyword, return type, name.
         // We can't create another method with same parameters even with different names.
-        //Inheritance: Using properties and behaviour of parent class, It could be multi level, but not multiple.
+        // Inheritance: Using properties and behaviour of parent class, It could be multi level, but not multiple.
         advCalc c = new advCalc(10,20);
         c.add();
         advCalc c2 = new advCalc(); //This alone calling three line, with super and this.
