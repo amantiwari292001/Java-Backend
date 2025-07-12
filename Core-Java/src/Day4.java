@@ -20,7 +20,7 @@ public class Day4 {
         System.out.println(name3);
         new Encapsulation(); //We can't use anonymous object second time.
 
-        System.out.println(name3);
+        System.out.println(name3); //toString will help us to print the value.
     }
 }
 
