@@ -19,6 +19,8 @@ public class Day4 {
         String name3 = new Encapsulation("Anonymous Object").getName();//This object doesn't have any reference variable,
         System.out.println(name3);
         new Encapsulation(); //We can't use anonymous object second time.
+
+        System.out.println(name3);
     }
 }
 
@@ -46,11 +48,11 @@ class Mobile{
 class Encapsulation{ // Encapsulation is the concept of restricting direct access to some components of an object,
     private String name; //private keyword make the varibale not accessable outside this class.
 
-    public Encapsulation(){//Constructor without parameter, default.
+    public Encapsulation(){//Constructor without parameter, default. We use class name to create them.
         System.out.println("No-Parameter or default parameter.");
     }
 
-    public Encapsulation(String name){ //We create parameters using class name
+    public Encapsulation(String name){ //Constructor with parameter, provides values to instance variables.
         this.name = name;
     }
 
@@ -60,6 +62,10 @@ class Encapsulation{ // Encapsulation is the concept of restricting direct acces
 
     String getName(){
         return this.name;
+    }
+
+    public String toString(){ //Objec class method, returns object as String.
+        return name;
     }
 }
 

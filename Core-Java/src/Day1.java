@@ -1,4 +1,4 @@
-public class Day1 { //Main Class, Only one main class is possible in a file.
+public class Day1 { //Main Class, Only one main/public class is possible in a file.
     public static void main(String[] cc) { //Main Method, Reference of point to start the program.
         System.out.print("No Next Line Output\n"); //Ways to print a value. \n gives next line.
         System.out.println("Next Line Output");
