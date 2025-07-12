@@ -22,7 +22,7 @@ public class Day1 { //Main Class, Only one main/public class is possible in a fi
         int charToInt = 'A'; //Char can also be treated as integers.
         System.out.println(charToInt);
 
-        //Type Conversion and Casting:
+        // Type Conversion and Casting:
         // Conversion->Small to Big, Implicit, Keeping values with small data types in variables with big data type.
         // Casting-> Big to Small, Opposite of conversion.
         double casting = 10.741;
