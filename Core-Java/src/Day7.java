@@ -78,7 +78,9 @@ enum Status{ //A special type of class used to represent a fixed set of constant
 
 enum Actions{
     //enum constants must be declared before any fields or constructors.
-    CHARGE("Charge"), REFUND("Refund"), CANCELED("Canceled");
+    CHARGE("Charge"),
+    REFUND("Refund"),
+    CANCELED("Canceled");
 
     private String action;
 
