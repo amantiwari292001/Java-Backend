@@ -19,7 +19,7 @@ public class CompComp {
         Comparator<Students> comp = (o1, o2) -> {return o2.roll-o1.roll;};
         //Comparator is another thing same as comparable, but gives us differnt logics to sort a list. It can be written in lambda function.
         //Or has a method compare(Obj 1, Obj 2), It compares two objects.
-        Collections.sort(list, comp);
+        Collections.sort(list, comp); //It requires the instance of comparator to sort.
         System.out.println(list);
 
         Comparator<Students> sortByName = (o1, o2) ->{return o1.name.compareTo(o2.name);};
