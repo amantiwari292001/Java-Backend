@@ -64,6 +64,9 @@ public class Day10 {
         for(Map.Entry<Integer, String> entry: m.entrySet()){
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
+
+        //map.getOrDefault(key, 0); this methods says, if it finds the keys,
+        // it will return the value, if doesn't it will return the default value which is 0 here.
     }
 }
 
