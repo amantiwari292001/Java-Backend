@@ -1,0 +1,50 @@
+<!--Could get on internet, XML Schema-based configuration-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        Bean definitions in Spring create objects at container startup by default.
+        This happens even if you don't explicitly request them.
+
+        By default, Spring beans are singleton scoped:
+        - Only one instance is created and shared across the application.
+
+        To get a new instance every time, use prototype scope:
+        - Each request for the bean returns a new object with a different reference.
+
+        To set the instance variables:
+        - We use property tag, with name field for variable name and value field for value,
+        - If primitive use value, else ref.
+        - Which relies on private field and getter/setters.
+
+        To pass the value from constructor:
+        - Use constructor-agr tag, Multiple values, Multiple tags, In order or with name field.
+    -->
+    <bean id="human" class="com.project.Human" scope="prototype" autowire="byName">
+        <property name="age" value="23" />
+        <property name="l" ref="laptop" />
+    </bean>
+
+    <bean id="laptop" class="com.project.Laptop" scope="prototype">
+        <constructor-arg name="price" value="7100" />
+        <constructor-arg name="brand" value="Lenovo" />
+    </bean>
+
+    <!--Here in Computer, we are passing desktop, The name is of the variable which points different class,
+        When you use byType in autowiring, make sure to put only one child in the class.
+        Or add bean type with primary="true" to use both at a time.
+        lazy-init="true" stops framework to create objects without asking for it.
+    -->
+
+    <bean id="comp" class="com.project.Desktop" scope="prototype" lazy-init="true"/>
+    <!--
+        Defining beans with different IDs (e.g., human1, human2) creates separate instances,
+        even with singleton scope, because each ID maps to a distinct bean.
+    -->
+    <!-- <bean id="human1" class="com.project.Human" /> -->
+
+
+</beans>
