@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.project</groupId>
-  <artifactId>Servlet</artifactId>
+  <artifactId>Servelt</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Servlet Maven Webapp</name>
+  <name>Servelt Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -14,8 +14,14 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+      <dependency>
+          <groupId>org.apache.tomcat</groupId>
+          <artifactId>tomcat-servlet-api</artifactId>
+          <version>11.0.10</version>
+      </dependency>
   </dependencies>
   <build>
-    <finalName>Servlet</finalName>
+    <finalName>Servelt</finalName>
   </build>
 </project>
